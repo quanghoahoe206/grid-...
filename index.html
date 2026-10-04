@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thực hành CSS Grid - grid-row</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Thực hành thuộc tính CSS: grid-row</h1>
+    <p class="desc">Lưới gồm <strong>3 cột</strong> và <strong>3 hàng</strong> (mỗi hàng cao 100px). Ô 1 sử dụng <code>grid-row</code> để chiếm 2 hàng liên tiếp.</p>
+
+    <!-- Trường hợp 1: grid-row: 1 / 3 -->
+    <div class="box-section">
+        <h2>Trường hợp 1: <code>grid-row: 1 / 3;</code> (Bắt đầu line 1, kết thúc line 3)</h2>
+        <div class="grid-container case-1">
+            <div class="item item1">Ô 1 (chiếm hàng 1 & 2)</div>
+            <div class="item">Ô 2</div>
+            <div class="item">Ô 3</div>
+            <div class="item">Ô 4</div>
+            <div class="item">Ô 5</div>
+            <div class="item">Ô 6</div>
+        </div>
+    </div>
+
+    <!-- Trường hợp 2: grid-row: 2 / 4 -->
+    <div class="box-section">
+        <h2>Trường hợp 2: <code>grid-row: 2 / 4;</code> (Bắt đầu line 2, kết thúc line 4)</h2>
+        <div class="grid-container case-2">
+            <div class="item item1-case2">Ô 1 (dời xuống hàng 2 & 3)</div>
+            <div class="item">Ô 2</div>
+            <div class="item">Ô 3</div>
+            <div class="item">Ô 4</div>
+            <div class="item">Ô 5</div>
+            <div class="item">Ô 6</div>
+        </div>
+    </div>
+
+    <!-- Trường hợp 3: grid-row: span 2 -->
+    <div class="box-section">
+        <h2>Trường hợp 3: <code>grid-row: span 2;</code> (Tự động mở rộng 2 hàng)</h2>
+        <div class="grid-container case-3">
+            <div class="item item1-case3">Ô 1 (span 2 hàng)</div>
+            <div class="item">Ô 2</div>
+            <div class="item">Ô 3</div>
+            <div class="item">Ô 4</div>
+            <div class="item">Ô 5</div>
+            <div class="item">Ô 6</div>
+        </div>
+    </div>
+</body>
+</html>
